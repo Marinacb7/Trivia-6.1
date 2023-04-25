@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="paaa.webp">
+  <title>Trivia 6.1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Exo:ital,wght@1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>O que você realmente sabe sobre animais?</h1>
+  <section id="container">
+
+    <!--    Start      -->
+    <section id="name">
+      <h2>Qual o seu nome?</h2>
+      <input type='text'></input>
+    </section>
+    <section id="start">
+      <button id="startB">Avançar</button>
+    </section>
+
+
+    <!--    Guide     -->
+    <section id="guide">
+      <h2>Regras do Jogo</h2>
+      <h4>1. Você terá 20 segundos para cada pergunta.</h4>
+      <h4>2. Depois que selecionar a resposta, não poderá desfazer.</h4>
+      <h4>3. Você receberá pontos por acerto.</h4>
+      <h4>4. Você não pode sair do jogo depois de iniciado.</h4>
+
+      <section id="button">
+        <button id="exit">Sair</button>
+        <button id="continue">Continuar</button>
+      </section>
+    </section>
+
+    <!--    Quiz    -->
+    <section id="quiz">
+      <section id="quiz_header">
+        <h5>Quiz Animal</h5>
+        <section id="timer">
+          <h6>Tempo</h6>
+          <h6 id="time">00</h6>
+        </section>
+      </section>
+
+      <!--     Quiz Questions  -->
+
+      <section id="question">
+        <h2 id="questionNo"></h2>
+        <h2 id="questionText"></h2>
+      </section>
+
+      <!--       Quiz Choices   -->
+
+      <section id="optionList">
+        <h4 class="choice_que" id="option1"></h4>
+        <h4 class="choice_que" id="option2"></h4>
+        <h4 class="choice_que" id="option3"></h4>
+        <h4 class="choice_que" id="option4"></h4>
+      </section>
+
+      <!--  Answers -->
+
+      <section id="answersSection">
+        <h3 id="total_correct">3 de 4 Questões</h3>
+        <h3 id="next_question">Próximo</h3>
+      </section>
+    </section>
+    <!--   Result   -->
+    <section id="result">
+      <i class="fa fa-trophy" style="font-size:200px;color:lightcoral;"></i>
+      <h6>Parabéns, você finalizou!</h6>
+      <h6 id="points">Você acertou 2 de 4</h6>
+      <button id="quit">Sair do Jogo</button>
+      <button id="startAgain">Reiniciar</button>
+    </section>
+  </section>
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
